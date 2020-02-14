@@ -12,10 +12,26 @@ Requirements:
 - [node](https://nodejs.org)
 - [sed](https://www.gnu.org/software/sed)
 
+MacOS X contributors need to install gnu-sed
+
+```bash
+brew install gnu-sed
+```
+
+then **you have to add\modify to your PATH like this 'PATH="/usr/local/opt/gnu-sed/libexec/gnubin:\$PATH"' from your ~/.bashrc or ~/.zshrc**
+
 Running test suite:
 
 ```bash
 tox
+```
+
+After the test suite finished successful and if you use a PyCharm you should setup `{YOU PROJECT ROOT}.tox/.package/bin/python3.8` as a project interpreter
+
+Install needed npms
+
+```bash
+npm install
 ```
 
 Code coverage…
